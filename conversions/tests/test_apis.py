@@ -1,3 +1,5 @@
+from unittest import mock
+
 from django.test import TestCase
 from django.contrib.auth.models import User
 from rest_framework.authtoken.models import Token
@@ -6,7 +8,10 @@ from rest_framework.test import APIClient
 from ..providers import FixerExchangeRateProvider
 from .. import models as conversion_models
 
+from .mock_fixer_api import mock_fixer_api
 
+
+@mock.patch('requests.get', mock_fixer_api)
 class ConversionAPITestCase(TestCase):
     def setUp(self):
         self.from_currency = "EUR"
