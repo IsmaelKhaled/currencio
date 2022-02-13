@@ -17,7 +17,7 @@ Run `docker-compose build && docker-compose up`
 Then you can either login into admin and create a new user to test the API with, or user the superuser you just created.
 
 ## To use the project:
-1. Authenticate at `/api-token-auth/` with a POST request with payload:
+1. Authenticate at `/api/api-token-auth/` with a POST request with payload:
 ```json
 {
     "username": "api_user",
