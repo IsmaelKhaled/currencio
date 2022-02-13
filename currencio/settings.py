@@ -129,4 +129,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 FIXER_BASE_URL = "http://data.fixer.io/api/"
-FIXER_API_KEY = "7cde4d2e754cbcb18e12084b9b0396ed"
+FIXER_API_KEY = "bdaa39119847229334df1410524be0df"
